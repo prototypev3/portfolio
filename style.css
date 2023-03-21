@@ -6,6 +6,7 @@ header {
     text-transform: uppercase;
     text-align: center;
     background-color: firebrick;
+  
 
 }
 /* Navbar section*/
@@ -81,6 +82,35 @@ body {
         }
       }
 
+@media screen and(max-width:600) {
+    .text4{
+    
+        width: 15ch;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 4px solid #212121;
+        animation: cursor 6s step-start infinite, 
+          text 7s steps(40) infinite;
+          
+          
+      }
+      
+      @keyframes cursor {
+        0%, 100% { 
+          border-color: #212121; 
+        }
+      }
+      
+      @keyframes text {
+        0% { 
+          width: 0; 
+        }
+        100% { 
+          width: 15ch; 
+        }
+      }
+    
+}
 
 /* Skills  */
 #techs{
@@ -146,7 +176,7 @@ to {
 
  #CSS {
     animation: Animate-CSS 4s;
-    width: 60%;
+    width: 70%;
     height: 30px;
     position: absolute;
     background-color: #3AA4D8;
@@ -156,7 +186,7 @@ to {
     width: 10px;
 }
 to {
-    width: 60%;
+    width: 70%;
 }
 }
 
@@ -205,19 +235,33 @@ to {
 to {
     width: 50%}
 }
-#Bootstrap {
-    animation: Animate-Bootstrap 4s;
-    width: 60%;
+#Symfony {
+    animation: Animate-Symfony 4s;
+    width: 30%;
     height: 30px;
     position: absolute;
-    background-color:rgb(178, 70, 164);
+    background-color:rgb(10, 7, 10);
 }
-@keyframes Animate-Bootstrap{
+@keyframes Animate-Symfony{
     from {
     width: 10px;
 }
 to {
-    width: 60%}
+    width: 30%}
+}
+#Bootstrap {
+  animation: Animate-Bootstrap 4s;
+  width: 60%;
+  height: 30px;
+  position: absolute;
+  background-color:rgb(178, 70, 164);
+}
+@keyframes Animate-Bootstrap{
+  from {
+  width: 10px;
+}
+to {
+  width: 60%}
 }
 
 
